@@ -82,6 +82,8 @@ class ECSManager:
             UtilClient.assert_as_string(error.message)
             print(error)
 
+    pass
+
     @staticmethod
     async def main_async() -> None:
         client = ECSManager.create_client('accessKeyId', 'accessKeySecret')

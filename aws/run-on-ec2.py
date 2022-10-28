@@ -88,7 +88,7 @@ def trigger_run(run_id, skip_setup, max_k, only_setup, cleanup):
         run_commands_on_instances(ec2manager, instance_commands)
         return
 
-    port = AwsConfig.MPC_CONFIG.PORT
+    port = AwsConfig.MPC_CONFIG.PO
 
     if AwsConfig.MPC_CONFIG.COMMAND.endswith("adkg_run"):
         instance_configs = get_instance_configs(
